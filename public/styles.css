@@ -505,10 +505,33 @@ section {
   height: 24px;
   object-fit: contain;
   filter: brightness(0) saturate(100%) invert(88%) sepia(15%) saturate(1844%) hue-rotate(107deg) brightness(98%) contrast(101%);
+  transition: var(--transition);
+}
+
+.tech-icon-skill {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  transition: var(--transition);
+  border-radius: 4px;
+}
+
+.tech-icon-invert {
+  filter: brightness(0) invert(1);
 }
 
 .tech-badge:hover .tech-icon {
   filter: brightness(0) saturate(100%) invert(88%) sepia(15%) saturate(1844%) hue-rotate(107deg) brightness(110%) contrast(101%);
+  transform: scale(1.1);
+}
+
+.tech-badge:hover .tech-icon-skill {
+  transform: scale(1.15);
+  box-shadow: 0 4px 12px rgba(100, 255, 218, 0.3);
+}
+
+.tech-badge:hover .tech-icon-invert {
+  filter: brightness(0) invert(1);
   transform: scale(1.1);
 }
 
