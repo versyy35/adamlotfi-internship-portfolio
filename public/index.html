@@ -14,8 +14,10 @@
                 <a href="#about">About</a>
                 <a href="#activities">Activities</a>
                 <a href="#timeline">Timeline</a>
+                <a href="#impact-stats">Impact</a>
                 <a href="#projects">Projects</a>
                 <a href="#learnings">Learnings</a>
+                <a href="#reflections">Reflections</a>
                 <a href="#contact">Contact</a>
             </div>
             <button class="mobile-menu-btn" aria-label="Toggle menu">
@@ -27,29 +29,49 @@
     </nav>
 
     <section id="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-profile">
-                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_9844-ixxUCtgJgLtW6vXMSW2qzeIvewzFtx.jpg" alt="Adam Fikri at work" class="profile-photo">
-                </div>
+    <div class="container">
+        <div class="hero-content-flex">
+            <!-- Left Side: Profile Photo -->
+            <div class="hero-profile-side">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_9844-ixxUCtgJgLtW6vXMSW2qzeIvewzFtx.jpg" alt="Adam Fikri at work" class="profile-photo">
+            </div>
+
+            <!-- Right Side: Text Content -->
+            <div class="hero-text-side">
                 <p class="hero-greeting">Hello, I'm</p>
                 <h1 class="hero-name">Adam Fikri bin Mohd Lotfi</h1>
                 <h2 class="hero-title">Software Engineer Intern</h2>
-                <div class="hero-company">
-                    <img src="HISLogoBadge.png" alt="HELP International School Logo" class="company-logo">
-                    <div class="company-info">
-                        <p class="company-name">HELP International School</p>
-                        <p class="company-department">EdTech Department</p>
+                
+                <!-- University Journey Section -->
+                <div class="university-journey">
+                    <div class="university-logos">
+                        <div class="uni-logo-item">
+                            <img src="MMU-Multimedia-University.png" alt="Multimedia University Logo" class="uni-logo">
+                            <span class="uni-name">MMU</span>
+                        </div>
+                        <div class="journey-arrow">
+                            <svg width="40" height="20" viewBox="0 0 40 20" fill="none">
+                                <path d="M0 10H38M38 10L30 2M38 10L30 18" stroke="#64ffda" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <div class="uni-logo-item">
+                            <img src="HISLogoBadge.png" alt="HELP International School Logo" class="uni-logo">
+                            <span class="uni-name">HELP</span>
+                        </div>
                     </div>
+                    <p class="journey-tagline">From Academia to Industry · Bridging Knowledge with Innovation</p>
                 </div>
+
                 <p class="hero-description">
                     ID: 1211111950<br>
                     28 July 2025 - 24 October 2025
                 </p>
+                
                 <a href="#timeline" class="cta-button">View My Journey</a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <section id="about">
         <div class="container">
@@ -245,6 +267,21 @@
                 <div class="timeline-item">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
+                        <span class="timeline-date">Week 4: 18-22 August 2025</span>
+                        <h3>Advanced Features</h3>
+                        <ul>
+                            <li>Developed question management functionality</li>
+                            <li>Created template assignment system</li>
+                            <li>Initiated secure token generation</li>
+                            <li>Refactored exam system based on feedback</li>
+                            <li>Performed hardware troubleshooting in computer labs</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
                         <span class="timeline-date">Week 5: 25-29 August 2025</span>
                         <h3>System Enhancements</h3>
                         <ul>
@@ -336,6 +373,34 @@
         </div>
     </section>
 
+    <section id="impact-stats">
+        <div class="container">
+            <h2 class="section-title">Internship Impact</h2>
+            <div class="stats-grid">
+                <div class="stat-card" data-target="10">
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">Weeks of Training</div>
+                </div>
+                <div class="stat-card" data-target="3">
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">Major Projects</div>
+                </div>
+                <div class="stat-card" data-target="2">
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">Interns Mentored</div>
+                </div>
+                <div class="stat-card" data-target="500">
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">+ Students Served</div>
+                </div>
+                <div class="stat-card" data-target="13">
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">Technologies Used</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="projects">
         <div class="container">
             <h2 class="section-title">Major Projects</h2>
@@ -404,8 +469,6 @@
         </div>
     </section>
 
-    
-
     <section id="learnings">
         <div class="container">
             <h2 class="section-title">Key Learnings</h2>
@@ -439,6 +502,94 @@
                     <div class="learning-icon">🐛</div>
                     <h3>Problem Solving</h3>
                     <p>Enhanced debugging skills through complex API issues, JavaScript logic challenges, and system optimization</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reflections">
+        <div class="container">
+            <h2 class="section-title">Reflections & Growth</h2>
+            
+            <div class="reflection-grid">
+                <!-- Problems & Solutions -->
+                <div class="reflection-card challenges-card">
+                    <div class="reflection-header">
+                        <div class="reflection-icon">🔧</div>
+                        <h3>Challenges Overcome</h3>
+                    </div>
+                    <div class="challenge-item">
+                        <h4>IIS Deployment Complexity</h4>
+                        <p class="problem">Encountered technical difficulties with wfastcgi implementation for Django deployment on IIS server due to deprecated technology and lack of active maintenance support.</p>
+                        <p class="solution"><strong>Solution:</strong> Researched alternative approaches and migrated to httphandler, successfully resolving deployment obstacles. Configured DNS routing and troubleshooted Django-IIS integration, resulting in successful production deployment.</p>
+                    </div>
+                    <div class="challenge-item">
+                        <h4>Data Persistence Bug</h4>
+                        <p class="problem">Critical bug where students who previously registered for exams in a different series encountered data persistence issues when registering for a new series, with old subject selections incorrectly carrying over.</p>
+                        <p class="solution"><strong>Solution:</strong> Conducted comprehensive analysis of database schema and API fetching code architecture. Restructured primary keys (PK) and foreign keys (FK) of database entities, and refactored API fetching logic to properly clear previous registration data.</p>
+                    </div>
+                    <div class="challenge-item">
+                        <h4>Production Deployment Timing</h4>
+                        <p class="problem">Lack of system maintenance notification to end users created unnecessary confusion and system instability when parents accessed the system during update implementation.</p>
+                        <p class="solution"><strong>Solution:</strong> Coordinated with exam unit managers to schedule system updates during low-traffic periods. Implemented proper deployment procedures and user communication protocols to balance development velocity with user experience.</p>
+                    </div>
+                </div>
+
+                <!-- Training Analysis -->
+                <div class="reflection-card analysis-card">
+                    <div class="reflection-header">
+                        <div class="reflection-icon">📊</div>
+                        <h3>Self-Assessment</h3>
+                    </div>
+                    
+                    <div class="strength-weakness">
+                        <div class="assessment-section strengths">
+                            <h4>💪 Strengths Demonstrated</h4>
+                            <ul>
+                                <li>Backend architecture design & database optimization</li>
+                                <li>Systematic problem-solving through comprehensive investigation</li>
+                                <li>Clear technical documentation (SRS, UML, ERD, DFD)</li>
+                                <li>Effective stakeholder communication & requirement gathering</li>
+                                <li>Mentorship & knowledge transfer to junior interns</li>
+                                <li>Adaptive problem-solving when initial approaches proved unviable</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="assessment-section improvements">
+                            <h4>🎯 Areas for Growth</h4>
+                            <ul>
+                                <li>Frontend UI/UX design consistency across multiple frameworks</li>
+                                <li>Time estimation accuracy for complex feature implementation</li>
+                                <li>Comprehensive end-to-end testing across different user scenarios</li>
+                                <li>Proactive deployment planning with proper maintenance windows</li>
+                                <li>Researching current best practices and actively supported technologies before implementation</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <p class="suitability-statement">
+                        <strong>Suitability Confirmation:</strong> This internship confirmed my strong interest and suitability in full-stack web development and system integration. My strengths lie in backend logic design, clean documentation, and collaborative problem-solving. The hands-on experience with real stakeholders, production deployments, and mentorship opportunities solidified that software engineering is the right career path for me. These realizations have motivated me to further strengthen my UI/UX understanding and improve project planning accuracy in future work.
+                    </p>
+                </div>
+
+                <!-- Recommendations -->
+                <div class="reflection-card recommendation-card">
+                    <div class="reflection-header">
+                        <div class="reflection-icon">💡</div>
+                        <h3>Recommendations for Future Interns</h3>
+                    </div>
+                    <div class="recommendation-content">
+                        <p>I <strong>highly recommend</strong> the EdTech Department internship at HELP International School for students interested in:</p>
+                        <ul class="recommendation-list">
+                            <li><strong>Real-world impact:</strong> Your code directly serves students, parents, and administrative staff in a live educational environment with immediate feedback</li>
+                            <li><strong>Full-stack exposure:</strong> Work with modern technologies including Django, PHP, React, Next.js, TypeScript, database design, and production deployment on IIS servers</li>
+                            <li><strong>Stakeholder collaboration:</strong> Regular meetings with HR managers, exam units, and end-users provide valuable experience in requirement gathering and iterative development</li>
+                            <li><strong>Mentorship opportunities:</strong> Guide junior developers and A Level interns, reinforcing your own knowledge through teaching</li>
+                            <li><strong>Learning environment:</strong> Supportive supervisor who encourages learning through experimentation, freedom to propose solutions, and hands-on problem-solving</li>
+                            <li><strong>Professional growth:</strong> Develop both technical skills (deployment, debugging, system architecture) and soft skills (communication, time management, priority juggling)</li>
+                        </ul>
+                        <p class="recommendation-tip"><strong>Pro Tip:</strong> Don't be afraid to ask questions, propose alternative solutions, and research best practices. The team values initiative, creative problem-solving, and willingness to explore new approaches when challenges arise!</p>
+                    </div>
                 </div>
             </div>
         </div>
