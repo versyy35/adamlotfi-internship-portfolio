@@ -835,6 +835,106 @@ section {
   gap: 30px;
 }
 
+/* Activities Section */
+#activities {
+  background: linear-gradient(135deg, rgba(26, 47, 74, 0.3) 0%, rgba(10, 25, 47, 0.5) 100%);
+}
+
+.activities-description {
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 18px;
+  margin-bottom: 50px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.activities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 35px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.activity-card {
+  background: rgba(17, 34, 64, 0.7);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: var(--transition);
+  border: 1px solid rgba(100, 255, 218, 0.15);
+  display: flex;
+  flex-direction: column;
+}
+
+.activity-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(100, 255, 218, 0.25);
+  border-color: var(--accent);
+}
+
+.activity-image {
+  width: 100%;
+  height: 220px;
+  position: relative;
+  overflow: hidden;
+  background: var(--bg-tertiary);
+}
+
+.activity-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition);
+}
+
+.activity-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(100, 255, 218, 0.9) 0%, rgba(0, 242, 254, 0.8) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--bg-primary);
+  opacity: 0;
+  transition: var(--transition);
+}
+
+.activity-card:hover .activity-overlay {
+  opacity: 1;
+}
+
+.activity-card:hover .activity-img {
+  transform: scale(1.1);
+}
+
+.activity-content {
+  padding: 30px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.activity-content h3 {
+  color: var(--accent);
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.activity-content p {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  font-size: 15px;
+}
+
 .learning-card {
   background: rgba(17, 34, 64, 0.6);
   backdrop-filter: blur(10px);
@@ -1073,7 +1173,8 @@ footer {
   }
 
   .projects-grid,
-  .learnings-grid {
+  .learnings-grid,
+  .activities-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1189,5 +1290,13 @@ footer {
 
   .about-grid {
     grid-template-columns: 1fr;
+  }
+
+  .activities-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .activity-image {
+    height: 200px;
   }
 }
